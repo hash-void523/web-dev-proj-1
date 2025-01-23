@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1><u>HTML</u></h1>
+    <marquee width="60%" direction="right to left">
+        Welcome to the world of HTML and CSS!!:)
+     </marquee>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="day2.html">LIST</a></li>
+            <li><a href="day3.html">AUDIO&VIDEO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<link rel="stylesheet" href="style.css">
+<body>
+    <main>
+        <section>
+            <h2>Please enter your details:</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name"
+                pattern="^[a-zA-Z\s]+$" title="Name should only contain letters and spaces">
+                <span id="nameError" class="error-message"></span>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" required placeholder="Enter your phone number"
+                pattern="^\d{10}$" title="Phone number should be 10 digits without spaces or dashes.">
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <style>
+        h2{
+            text-align: center;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="tele"] {
+            background-color: #f9f9f9;
+        }
+
+        button {
+             background-color: #4CAF50;
+             color: white;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+             width: 100%;
+             font-size: 16px;
+        }
+
+        button:hover {
+             background-color: #45a049;
+            }
+        a{
+            background-color:transparent !important;
+            text-decoration: none;
+       }
+    </style>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 200px; /* Add padding to avoid content being hidden under the fixed header */
+    background-image: url('11.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+    img{
+        display: block;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+
+header {
+    background-color:rgb(1, 1, 15);
+    color:rgb(137, 126, 238);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is always above other content */
+    h1 {
+        font-size: 45px;
+        font-family:Arial, Helvetica, sans-serif 
+    }
+    nav {
+        color:rgb(110, 112, 248);
+    }
+    
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+}
+
+main section {
+    h1{
+        font-size: 40px;
+        text-align: left;
+    }
+    margin-bottom: 20px;
+    h2 {
+        font-size: 30px;
+    }
+}
+}
+html{
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    scroll-behavior: smooth; /* Smooth scrolling for the page */
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+css{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+footer {
+    position: fixed;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
